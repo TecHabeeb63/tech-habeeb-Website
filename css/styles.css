@@ -37,7 +37,7 @@ header h1 {
     margin: 0;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
-    color: #0a0a09;
+    color: #f0f015;
     text-shadow: 3px 4px 8px rgba(219, 23, 39, 0.4);
     animation: headerEffect 2s ease-in-out;
     position: relative;
@@ -100,9 +100,9 @@ nav {
     padding: 1rem;
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 97.5%;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(241, 7, 7, 0.89);
 }
 
 nav a {
@@ -444,4 +444,42 @@ footer {
     section {
         padding: 3rem 1rem;
     }
+}
+/* Tabs Styling */
+.tabs {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tab-button {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-button:hover,
+.tab-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Form Tabs */
+.form-tab {
+    display: none;
+}
+
+.form-tab.active {
+    display: block;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
